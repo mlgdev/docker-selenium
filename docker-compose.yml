@@ -16,8 +16,8 @@ services:
     environment:
       - HUB_HOST=selenium-hub
       - HUB_PORT=4444
-      - MAX_SESSION=5
-      - MAX_INSTANCES=5
+      - NODE_MAX_SESSION=5
+      - NODE_MAX_INSTANCES=5
   firefox:
     image: selenium/node-firefox:3.141.59-oxygen
     volumes:
@@ -27,5 +27,5 @@ services:
     environment:
       - HUB_HOST=selenium-hub
       - HUB_PORT=4444
-      - MAX_SESSION=5
-      - MAX_INSTANCES=5
+      - NODE_MAX_SESSION=5
+      - NODE_MAX_INSTANCES=5
