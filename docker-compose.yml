@@ -27,4 +27,5 @@ services:
     environment:
       - HUB_HOST=selenium-hub
       - HUB_PORT=4444
+      - MAX_SESSION=5
       - MAX_INSTANCES=5
